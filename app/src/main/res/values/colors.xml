@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#FF9800</color> <!-- Orange -->
+    <color name="colorPrimaryDark">#F57C00</color> <!-- Darker orange -->
+    <color name="colorAccent">#212121</color> <!-- Almost black -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrayText">#757575</color>
 </resources>
