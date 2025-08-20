@@ -11,6 +11,7 @@
     2. Damasa Shafa Ariella Rahayu (10)
     3. Efanda Reyo Saputra (11)
     4. Elsye Sukma Argita (12)
+    5. Galang Surya Admaja (15)
    
   - Penjelasan Alur Data
     Alur data pada aplikasi ini diawali dari SplashActivity, yang menampilkan layar pembuka selama beberapa detik. Setelah itu, pengguna dialihkan ke MainActivity yang          berisi daftar koleksi buku. Informasi buku didefinisikan pada kelas Book sebagai model, yang menyimpan atribut berupa judul, penulis, tahun terbit, serta gambar sampul.
