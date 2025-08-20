@@ -1,32 +1,30 @@
-    package com.smkth.app4recyclerview.detail
+package com.smkth.app4recyclerview
 
-    import android.os.Bundle
-    import android.widget.ImageView
-    import android.widget.TextView
-    import androidx.appcompat.app.AppCompatActivity
-    import com.smkth.app4recyclerview.R
+import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 
-    class BookDetailActivity : AppCompatActivity() {
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_book_detail)
+class BookDetailActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_book_detail)
 
-            val imgBook = findViewById<ImageView>(R.id.imgBookDetail)
-            val tvTitle = findViewById<TextView>(R.id.tvTitleDetail)
-            val tvAuthor = findViewById<TextView>(R.id.tvAuthorDetail)
-            val tvYear = findViewById<TextView>(R.id.tvYearDetail)
-            val tvStory = findViewById<TextView>(R.id.tvStoryDetail)
+        val imgBookDetail: ImageView = findViewById(R.id.imgBookDetail)
+        val tvTitleDetail: TextView = findViewById(R.id.tvTitleDetail)
+        val tvAuthorDetail: TextView = findViewById(R.id.tvAuthorDetail)
+        val tvYearDetail: TextView = findViewById(R.id.tvYearDetail)
 
-            val title = intent.getStringExtra("title")
-            val author = intent.getStringExtra("author")
-            val year = intent.getStringExtra("year")
-            val image = intent.getIntExtra("image", 0)
-            val story = intent.getStringExtra("story")
+        val title = intent.getStringExtra("title")
+        val author = intent.getStringExtra("author")
+        val year = intent.getStringExtra("year")
+        val image = intent.getStringExtra("image")
 
-            imgBook.setImageResource(image)
-            tvTitle.text = title
-            tvAuthor.text = author
-            tvYear.text = year
-            tvStory.text = story
-        }
+        tvTitleDetail.text = title
+        tvAuthorDetail.text = author
+        tvYearDetail.text = year
+        Glide.with(this).load(image).into(imgBookDetail)
     }
+}
+
