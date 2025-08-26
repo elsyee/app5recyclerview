@@ -4,11 +4,19 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.smkth.app5recyclerview"
     compileSdk = 36
 
     defaultConfig {
         applicationId = "com.smkth.app5recyclerview"
+=======
+    namespace = "com.smkth.app4recyclerview"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.smkth.app4recyclerview"
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -36,12 +44,25 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
+=======
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+<<<<<<< HEAD
+=======
+
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

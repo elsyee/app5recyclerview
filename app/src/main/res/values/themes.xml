@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.App5recyclerview" parent="Theme.Material3.DayNight.NoActionBar">
@@ -7,3 +8,35 @@
 
     <style name="Theme.App5recyclerview" parent="Base.Theme.App5recyclerview" />
 </resources>
+=======
+<!-- res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema utama aplikasi -->
+    <style name="Theme.MyLibraryApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Warna utama diambil dari logo -->
+        <item name="colorPrimary">#F28C28</item> <!-- Oranye dari buku -->
+        <item name="colorPrimaryVariant">#D97706</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">#6BBF59</item> <!-- Hijau dari simbol sinyal & garis -->
+        <item name="colorSecondaryVariant">#4CAF50</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- Warna background -->
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+
+        <!-- Status bar & navigation bar -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+
+        <!-- Menonaktifkan action bar -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MainActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521

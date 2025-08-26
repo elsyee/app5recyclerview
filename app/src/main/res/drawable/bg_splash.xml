@@ -1,0 +1,9 @@
+<!-- res/drawable/bg_splash.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white" /> <!-- Warna latar putih -->
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/logo_library" /> <!-- Logo PNG kamu -->
+    </item>
+</layer-list>

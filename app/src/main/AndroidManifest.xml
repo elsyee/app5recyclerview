@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< HEAD
+=======
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521
 
     <application
         android:allowBackup="true"
@@ -10,6 +14,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.App5recyclerview">
         <activity
             android:name=".MainActivity"
@@ -23,3 +28,26 @@
     </application>
 
 </manifest>
+=======
+        android:theme="@style/Theme.MyLibraryApp">
+
+        <!-- SplashActivity jadi layar pertama -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- MainActivity hanya activity biasa -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".BookDetailActivity" />
+    </application>
+
+</manifest>
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521

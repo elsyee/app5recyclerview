@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgBookDetail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvTitleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku"
+            android:textSize="22sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvAuthorDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penulis"
+            android:textSize="16sp"
+            android:textColor="@color/colorGrayText"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/tvYearDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tahun"
+            android:textSize="14sp"
+            android:textColor="@color/colorGrayText"
+            android:layout_marginBottom="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvStoryDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Isi cerita buku..."
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:lineSpacingExtra="4dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">app5recyclerview</string>
+=======
+    <string name="app_name">app4recyclerview</string>
+>>>>>>> c66765f829c408d829661931253c35bdf4b8e521
 </resources>
