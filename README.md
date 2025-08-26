@@ -129,6 +129,45 @@
               Dengan alur ini, setiap kali pengguna menekan tombol hapus, aplikasi terlebih dahulu memastikan konfirmasi dari pengguna agar tidak terjadi penghapusan
               data secara tidak sengaja, dan setelah dikonfirmasi, data akan dihapus dari daftar serta tampilan list diperbarui secara otomatis.
 
+          7. Api service
+             <img width="986" height="346" alt="image" src="https://github.com/user-attachments/assets/f5a05454-208a-40e4-ad97-190d5c21d395" />
+             Ini adalah “jalan” untuk ambil data dari API.
+             @GET(".") artinya kita ambil data langsung dari BASE_URL.
+             Fungsi getBooks() akan mengembalikan daftar Book.
+
+          9. RetrofitCient
+              <img width="986" height="346" alt="image" src="https://github.com/user-attachments/assets/2ae7296f-9051-4b82-a296-24c94a62608a" />
+              Ini adalah penghubung aplikasi dengan API.
+              BASE_URL adalah alamat API.
+              Retrofit akan mengubah data JSON dari API menjadi objek Kotlin (Book).
+       
+          10. Main Activity
+              <img width="1266" height="407" alt="image" src="https://github.com/user-attachments/assets/268a6de0-8d0f-4ffb-af04-3accc34b9c23" />
+              <img width="1121" height="454" alt="image" src="https://github.com/user-attachments/assets/00c4e3f9-f9f4-45b5-9eb2-0a4fb92e5321" />
+              1. RecyclerView & Adapter
+              RecyclerView dipakai untuk menampilkan daftar buku.
+              BookAdapter sebagai penghubung data ke tampilan.
+              2. Fungsi getBooks()
+                 Panggil API lewat RetrofitClient dan ApiService.
+              3. onResponse()
+                 Jika sukses → data buku dimasukkan ke adapter → tampil di RecyclerView.
+                 Jika gagal → tampil pesan "Gagal load data: kode error".
+              4. onFailure()
+                 Jika koneksi error → tampil pesan "Error: ..." dan dicetak di Logcat.
+                 Alur Kerja
+                 Aplikasi dibuka → RecyclerView disiapkan.
+                 Panggil API → ambil data buku.
+                 Data ditampilkan di RecyclerView.
+                 Jika error, muncul Toast + log error.
+             
+
+       
+          12. Book
+              <img width="944" height="315" alt="image" src="https://github.com/user-attachments/assets/4bb037f0-20ec-471e-b3a8-ec7af97dc553" />
+               Ini adalah cetakan (model) dari data buku.
+              @SerializedName digunakan agar nama JSON dari API sesuai dengan variabel kita.
+              Misalnya: judul dari API masuk ke title di aplikasi.
+
 
 
              - Hasil dari RecycleView // APK Buku Perpustakaan
